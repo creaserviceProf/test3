@@ -45,10 +45,11 @@
         }
 
         .car-sprite {
-            width: 200px;
-            height: 100px; /* Adjust as necessary */
+            width: 200px; /* Adjust to match one section's width in the sprite */
+            height: 100px; /* Adjust to match one section's height in the sprite */
             background-image: url('images/car-sprites.jpg');
-            background-size: 400%; /* Adjust based on the sprite dimensions */
+            background-size: 600px 100px; /* Full sprite width and height */
+            background-repeat: no-repeat;
         }
 
         .car-top-view {
@@ -56,11 +57,11 @@
         }
 
         .car-side-view {
-            background-position: -100% 0;
+            background-position: -200px 0; /* Adjust negative value for side view */
         }
 
         .car-rear-view {
-            background-position: -200% 0;
+            background-position: -400px 0; /* Adjust negative value for rear view */
         }
 
         .vehicle-settings {
